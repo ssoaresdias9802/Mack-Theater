@@ -1,8 +1,11 @@
-//matriz de assentos
-//retorno de assentos
-//marcar assentos
+
 public class Espetaculo{
-      String[][] assentos = {
+    private String nome;
+    private String hora;
+    private double preco;
+    private boolean[] assentos = new boolean[50];
+
+      String[][] mapaAssentos = {
         {"50", "49", "48", "47", "46", "45", "44", "43", "42", "41"},
         {"40", "39", "38", "37", "36", "35", "34", "33", "32", "31"},
         {"30", "29", "28", "27", "26", "25", "24", "23", "22", "21"},
@@ -18,4 +21,14 @@ public class Espetaculo{
         System.out.println();
 }
     }
+    public void marcarAssento(int Assento){
+        for (int i = 0; i < assentos.length; i++) {
+        for (int j = 0; j < assentos[i].length; j++) {
+                if (assento == Integer.parseInt(mapaAssentos[i][j])) {
+                    mapaAssentos[i][j] = "XX"; 
+                    ocupacaoAssentos[assento - 1] = true; 
+                    System.out.println("Assento " + assento + " reservado com sucesso!");
+                    return;
+                }
+    } 
 };
