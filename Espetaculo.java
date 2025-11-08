@@ -5,6 +5,12 @@ public class Espetaculo{
     private double preco;
     private boolean[] assentos = new boolean[50];
 
+    public Espetaculo(String nome, String hora, double preco, boolen assentos){
+        this.nome = nome;
+        this.hora = hora;
+        this.preco = preco;
+    }
+
       String[][] mapaAssentos = {
         {"50", "49", "48", "47", "46", "45", "44", "43", "42", "41"},
         {"40", "39", "38", "37", "36", "35", "34", "33", "32", "31"},
