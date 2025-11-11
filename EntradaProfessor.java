@@ -1,12 +1,11 @@
 public class EntradaProfessor extends Entrada {
-
-    public EntradaProfessor(Espetaculo esp, int assento) {
-        super(esp, assento);
+    public EntradaProfessor(Espetaculo esp, int numeroAssento) {
+        super(esp, numeroAssento);
     }
 
     @Override
     public double calcularPreco() {
-        return getPrecoInteira() * 0.6;
+        return espetaculo.preco * 0.6;
     }
 
     @Override

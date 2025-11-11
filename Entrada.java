@@ -1,13 +1,12 @@
-public abstract class Entrada extends Espetaculo {
-    protected int assento;
+public abstract class Entrada {
+    int numeroAssento;
+    Espetaculo espetaculo;
 
-    public Entrada(Espetaculo esp, int assento) {
-        super(esp.getNome(), esp.getData(), esp.getHora(), esp.getPrecoInteira());
-        this.assento = assento;
+    public Entrada(Espetaculo espetaculo, int numeroAssento) {
+        this.espetaculo = espetaculo;
+        this.numeroAssento = numeroAssento;
     }
 
-    public int getAssento() { return assento; }
-
-    public abstract double calcularPreco(); // método abstrato
+    public abstract double calcularPreco();
     public abstract String getTipo();
 }

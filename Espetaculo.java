@@ -1,30 +1,23 @@
 public class Espetaculo {
-    private String nome;
-    private String data;
-    private String hora;
-    private double precoInteira;
-    private boolean[] assentos = new boolean[50]; // false = livre, true = ocupado
+    String nome;
+    String data;
+    String hora;
+    double preco;
+    boolean[] assentos = new boolean[50];
 
-    public Espetaculo(String nome, String data, String hora, double precoInteira) {
+    public Espetaculo(String nome, String data, String hora, double preco) {
         this.nome = nome;
         this.data = data;
         this.hora = hora;
-        this.precoInteira = precoInteira;
+        this.preco = preco;
     }
 
-    public String getNome() { return nome; }
-    public String getData() { return data; }
-    public String getHora() { return hora; }
-    public double getPrecoInteira() { return precoInteira; }
-
     public void mostrarAssentos() {
-        System.out.println("\n ||| Assentos Disponíveis |||");
+        System.out.println("||| Assentos Disponíveis |||");
         for (int i = 0; i < assentos.length; i++) {
             if (i % 10 == 0) System.out.println();
-            if (assentos[i])
-                System.out.print("XX ");
-            else
-                System.out.printf("%02d ", i + 1);
+            if (assentos[i]) System.out.print("XX ");
+            else System.out.printf("%02d ", i + 1);
         }
         System.out.println();
     }

@@ -1,12 +1,11 @@
 public class EntradaMeia extends Entrada {
-
-    public EntradaMeia(Espetaculo esp, int assento) {
-        super(esp, assento);
+    public EntradaMeia(Espetaculo esp, int numeroAssento) {
+        super(esp, numeroAssento);
     }
 
     @Override
     public double calcularPreco() {
-        return getPrecoInteira() * 0.5;
+        return espetaculo.preco * 0.5;
     }
 
     @Override
