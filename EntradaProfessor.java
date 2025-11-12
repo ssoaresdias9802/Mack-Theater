@@ -1,3 +1,7 @@
+//Stephanie Julia Soares Dias 10223952  
+//Priscilla Yewon Lee 
+
+
 public class EntradaProfessor extends Entrada {
     public EntradaProfessor(Espetaculo esp, int numeroAssento) {
         super(esp, numeroAssento);

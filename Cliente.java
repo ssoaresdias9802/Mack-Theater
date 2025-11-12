@@ -1,3 +1,6 @@
+//Stephanie Julia Soares Dias 10223952  
+//Priscilla Yewon Lee 
+
 public class Cliente {
     String nome;
     String cpf;

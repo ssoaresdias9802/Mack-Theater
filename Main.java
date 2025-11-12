@@ -1,3 +1,7 @@
+//Stephanie Julia Soares Dias 10223952  
+//Priscilla Yewon Lee 
+
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -58,7 +62,6 @@ public class Main {
         sc.close();
     }
 
-    // === Métodos de cadastro ===
 
     public static void cadastrarEspetaculo(Scanner sc, ArrayList<Espetaculo> lista) {
         System.out.println("*** CADASTRO DE ESPETÁCULO ***");
@@ -86,8 +89,6 @@ public class Main {
         lista.add(new Cliente(nome, cpf));
         System.out.println(">>> Retornar ao menu principal <<<");
     }
-
-    // === Utilidades ===
     private static void limparTela() {
         System.out.print("\033[H\033[2J");
         System.out.flush();

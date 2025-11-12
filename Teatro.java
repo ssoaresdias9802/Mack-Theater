@@ -1,3 +1,6 @@
+//Stephanie Julia Soares Dias 10223952  
+//Priscilla Yewon Lee 
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

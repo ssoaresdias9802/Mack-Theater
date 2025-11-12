@@ -1,3 +1,7 @@
+//Stephanie Julia Soares Dias 10223952  
+//Priscilla Yewon Lee 
+
+
 public class Espetaculo {
     String nome;
     String data;

@@ -1,3 +1,7 @@
+//Stephanie Julia Soares Dias 10223952  
+//Priscilla Yewon Lee 
+
+
 public abstract class Entrada {
     int numeroAssento;
     Espetaculo espetaculo;
